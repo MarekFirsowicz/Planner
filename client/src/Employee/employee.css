@@ -1,0 +1,214 @@
+.recordDetails{
+  display: flex;   
+  flex-direction: row;
+  min-width: 0;
+  width: 100%;
+}
+
+
+/* Cards */
+
+.card{ 
+    width: 350px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0, 0.2);
+    border-radius: 5px 5px 0 0; 
+    margin: 10px;
+    position: relative;
+    background-color: white;
+  }
+  
+  .card h2{
+    background-color: rgb(140, 184, 17);
+    padding: 5px;
+    border-radius: 5px 5px 0 0; 
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  .card div{
+    padding: 5px;
+  }
+  
+  .card span{
+    position: absolute;
+    left: 100px
+  }
+  
+  
+
+  .details{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .cardButtons {
+    margin: 10px;  
+  }
+  
+  .cardButtons button{
+    height: 40px;
+    padding: 10px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0, 0.2);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .1s ease-in;
+    border: 1px solid black;
+  }
+  
+  .cardButtons button:hover, .holidays button:hover{
+    background-color: rgb(229,83,0);
+    color: #fff;
+    transform: scale(1.2);
+  }
+  
+  .holidays button{
+    margin-left: 10px;
+    padding: 7px;
+    transition: all .1s ease-in;
+    border: 1px solid black;
+  }
+
+  .holidays div{
+    text-align: right;
+    margin-right: 10px;
+  }
+
+/*delete button*/
+.card .fa-trash{ 
+  float: right;
+  cursor: pointer;
+  transition: all .1s ease-in;
+  margin-right: 10px;
+}
+
+
+/*update icons*/
+.card .fa-trash:hover{
+  transform: scale(1.8);
+  color:red
+}
+
+.card .fa-circle-check{
+  cursor: pointer;
+  transition: all .1s ease-in;
+  margin-left: 10px;
+}
+
+.card .fa-circle-check:hover{
+  transform: scale(1.8);
+  color:red
+}
+
+.card .fa-xmark{  
+  cursor: pointer;
+  transition: all .1s ease-in;
+  margin-left: auto
+}
+
+.card .fa-xmark:hover{
+  transform: scale(1.8);
+  color:red
+}
+
+.card .fa-pen-to-square{
+  color: black;
+  margin-left: auto
+}
+
+.card .fa-pen-to-square:hover{
+  color:rgb(229,83,0);
+}
+
+/*Update form*/
+.inputs{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.inputs label{
+   width: 100px;
+}
+
+.inputs input:disabled{
+  border: none;
+  background-color: white;
+  color: black
+}
+
+.inputs input{
+  padding: 0px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.inputs select:disabled{
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+.inputs select{
+  min-width: 160px;
+  margin: 0;
+  padding: 0px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.inputs option{
+  margin: 0;
+  padding: 0px;
+  color: black;
+}
+
+.skillsInfo .fa-solid{
+  float: right;
+}
+
+.skillsInfo .fa-circle-check{
+  margin-right: 30px;
+}
+
+.fa-circle-check.holiday{
+  background-color: transparent;
+  color:green
+}
+
+.fa-circle-check.cancel{
+  background-color: transparent;
+  color: rgb(0, 204, 255)
+}
+
+.fa-circle-check.absence{
+  background-color: transparent;
+  color:rgb(228, 112, 118)
+}
+
+.fa-circle-check.aaup{
+  background-color: transparent;
+  color:orange
+}
+
+.confirmDelete{
+  font-size: 18px;
+}
+
+.confirmDelete button{
+  border: none;
+}
+
+.confirmDelete span{
+  color:rgb(229,83,0);
+  font-size: 24px;
+  font-weight: 800;
+}
+/*media q*/
+
+@media(width<= 860px){
+  .recordDetails{
+    flex-direction: column;
+  }
+}

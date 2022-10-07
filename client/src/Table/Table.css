@@ -1,0 +1,333 @@
+/* css navbar */
+.navbar{
+    display: flex;
+    background-color: #464c56;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0, 0.2);
+    min-width: 1000px;
+    pointer-events: auto;
+
+  }
+  
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-right: 1px solid rgb(229,83,0);
+    width: 100px;
+    text-align: center;
+    font-size: 1.2rem;
+
+  }
+  
+.navbar a:hover{
+    background-color: rgb(229,83,0);
+  }
+  
+.navbar div{
+    color: white;
+    font-size: 1.2rem;
+    justify-content: flex-start;
+    padding: 10px;
+    color: rgb(140, 184, 17);
+    font-weight: 800;  
+    cursor: pointer;  
+
+
+  }
+
+
+
+
+  /* css records table */
+.recordTable{   
+    min-width: 1000px;
+    width: 96%;
+    background-color: white;    
+    border-collapse: collapse;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0, 0.2);
+    align-self: center;
+  }
+  /*
+  .recordTable tr{
+    transition: all .2s ease-in;
+   
+  }*/
+  
+  th,td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+  }
+  
+  
+  .recordHeader{
+    background-color: rgb(140, 184, 17);
+    color: #fff;
+    height: 50px;
+  }
+  /*
+  tbody tr:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0, 0.2);
+  
+  }*/
+  
+  .recordTable button{
+    cursor: pointer;
+    margin-right: 10px;
+    min-width: 60px;
+    height: 30px;
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all .1s ease-in;
+  }
+  
+  .recordTable button:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0, 0.2);
+    background-color: rgb(140, 184, 17);
+    color:white;
+  }
+  
+  thead select{
+    margin-left: 2px;
+    /*appearance: none;*/
+    background-color: transparent;
+    outline: none;
+  }
+  
+  
+  .numberOfHols{
+    display: inline-block;
+    border: 1px solid black;
+    background-color: rgb(229,83,0);
+   color: white;
+    width: 20px;
+    height:20px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  
+
+.record .fa-pen-to-square{
+  color: rgb(140, 184, 17);
+  transition: all .1s ease-in;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.fa-pen-to-square:hover{
+  transform: scale(1.8);
+}
+
+.record .holidayCount{
+  background-color: rgb(22, 182, 22);
+}
+
+.record .absenceCount{
+  background-color: rgb(255,0,0);
+}
+
+.record .aaCount{
+  background-color: rgb(255, 166, 0);
+}
+
+.record .cancelCount{
+  background-color: rgb(0, 204, 255);
+}
+
+.record div{
+  display: inline-block;
+  margin: 0 3px;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/*filter button*/
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid black;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-top: 5px solid black;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  
+  border-left: 5px solid black;
+}
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+  
+  border-right: 5px solid black; 
+}
+
+
+.filter {
+  cursor: pointer;
+  color: black
+}
+
+
+.activeFilter::after{
+  content: '';
+  display: block;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;  
+  border-top: 5px solid red;
+}
+
+.activeSorter::after{
+  content: '';
+  display: block;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent; 
+  border-top: 5px solid black;
+}
+
+.activeFilter{
+  color: black;
+}
+
+/*paginate*/
+.paginate{
+  min-width: 1000px;
+  align-self: center;
+  background-color: white;
+  border: 1px solid #bdc3c7;
+  border-radius: 10px 10px 0 0;
+  min-width: 1000px;
+  width: 96%;
+  margin: 5px 0;
+  padding: 6px;  
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0, 0.2);
+
+}
+
+.bottomPag{
+  border-radius: 0 0 10px 10px;
+}
+
+.paginate button{
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 7px 15px;
+}
+
+.paginate button:disabled{
+  background-color: #333;
+  color:white;
+  cursor: not-allowed;
+}
+
+/*search bar*/
+.searcher{
+  position: absolute;
+  top:0;
+  left: 0;
+  margin-top: 3px;
+  min-width: 1000px;
+  width: 100%;
+  pointer-events: none;
+
+}
+
+.searchDiv{
+  width: 200px;
+  float: right;
+  margin-right: 40px;
+  display: flex;
+}
+
+.searchDiv input{
+  background-color: white;
+  border: 2px solid rgb(229,83,0);
+  border-right-width: 0px;
+  height: 36px;
+  padding: 1px;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.2em;
+  width: 80%;
+  pointer-events: auto;
+  outline: none;
+}
+.searchDiv button{
+  border: 2px solid rgb(140, 184, 17); 
+  border-left-width: 0px;
+  pointer-events: auto;
+  height: 36px;
+  width: 20%;
+  background-color: #464c56;;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+
+}
+
+.searchDiv button .fa-xmark{
+  color:rgb(229,83,0);
+  font-size: 1.4em;
+  transition: all .1s ease-in; 
+}
+
+.searchDiv button:hover  .fa-xmark {
+  transform: scale(1.6);
+}
+
+.shiftDiv{
+  border: 1px solid black;
+  margin: 2px 0;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.eventDiv{
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.navbar .user{
+  font-size: 14px;
+}
+/*
+.searchDiv::after{
+  content: "";
+  clear: both;
+}
+*/
+
+/*
+.searcher input:focus .searchDiv button{
+  border-width: 2px;
+  border-right-width: 0px;
+}*/

@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #DCDCDC;
+  overflow: auto;
+}
+.error{
+  color: red;
+}
+
+.wrapper{    
+  display: flex;
+ flex-direction: column;
+  align-items: flex-start;
+  overflow-x: auto;
+}
